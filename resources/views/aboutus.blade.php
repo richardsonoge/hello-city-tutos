@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello city</title>
+        <title>About Us | Hello city</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -12,8 +12,12 @@
 
     </head>
     <body class="antialiased">
-        <h1>Hello from Port-au-Prince</h1>
-        <p>It's currently {{ date('h:i A') }}.</p>
+        <p>
+            Built with &hearts; by LES TEACHERS DU NET.   
+        </p>
+        <p>
+            <a href="/">Revenir a la page d'accueil</a>   
+        </p>
         <footer>
             <p>
                 &copy; Copyright &middot; {{ date('Y') }} <a href="/about-us">About Us</a>
