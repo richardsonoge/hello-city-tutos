@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>About Us | Hello city</title>
+        <title>Hello city</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -12,15 +12,13 @@
 
     </head>
     <body class="antialiased">
-        <p>
-            Built with &hearts; by LES TEACHERS DU NET.   
-        </p>
-        <p>
-            <a href="/">Revenir a la page d'accueil</a>   
-        </p>
+
+        @yield('section')
+
         <footer>
             <p>
-                &copy; Copyright &middot; {{ date('Y') }} <a href="/about-us">About Us</a>
+                &copy; Copyright 
+                &middot; {{ date('Y') }} <a href="/about-us">About Us</a>
             </p>
         </footer>
     </body>

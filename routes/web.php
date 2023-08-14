@@ -7,5 +7,5 @@ Route::get('', function () {
 });
 
 Route::get('about-us', function() {
-    return view('pages.aboutus');
+    return view('pages.about');
 });
