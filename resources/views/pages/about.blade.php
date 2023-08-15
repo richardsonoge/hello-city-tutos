@@ -1,13 +1,13 @@
 @extends('app')
 
-@section('title', 'About Us | '.config('project.variable'))
+@section('title', 'About Us | '.config('app.name'))
 
 @section('content')
     <p>
         Built with &hearts; by LES TEACHERS DU NET.   
     </p>
     <p>
-        <a href="/">Revenir a la page d'accueil</a>   
+        <a href="{{ route('home') }}">Revenir a la page d'accueil</a>   
     </p>
     </footer>
 @endsection

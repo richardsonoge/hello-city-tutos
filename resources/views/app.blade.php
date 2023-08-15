@@ -18,7 +18,7 @@
         <footer>
             <p>
                 &copy; Copyright 
-                &middot; {{ date('Y') }} <a href="/about-us">About Us</a>
+                &middot; {{ date('Y') }} <a href="{{ route('about') }}">About Us</a>
             </p>
         </footer>
     </body>
