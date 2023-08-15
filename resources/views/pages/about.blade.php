@@ -1,8 +1,8 @@
 @extends('app')
 
-@section('title', 'About Us | Hello city')
+@section('title', 'About Us | '.config('project.variable'))
 
-@section('section')
+@section('content')
     <p>
         Built with &hearts; by LES TEACHERS DU NET.   
     </p>

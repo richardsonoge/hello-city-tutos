@@ -1,8 +1,8 @@
 @extends('app')
 
-@section('title', 'Hello city')
+@section('title', config('app.name'))
 
-@section('section')
+@section('content')
     <h1>Hello from Port-au-Prince</h1>
     <p>It's currently {{ date('h:i A') }}.</p>
 @endsection

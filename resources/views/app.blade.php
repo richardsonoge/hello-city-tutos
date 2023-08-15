@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title', 'Contenu par défaut')</title>
+        <title>@yield('title', config('app.name'))</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,7 +13,7 @@
     </head>
     <body class="antialiased">
 
-        @yield('section')
+        @yield('content')
 
         <footer>
             <p>
