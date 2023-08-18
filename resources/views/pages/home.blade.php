@@ -1,6 +1,4 @@
-@extends('app')
-
-@section('title', config('app.name'))
+@extends('layouts.app', ['title' => config('app.name')])
 
 @section('content')
     <img src="{{ asset('images/all-devices-white.png') }}" width="200px" alt="all-devices-white" class="mt-12 rounded shadow-md h-32">

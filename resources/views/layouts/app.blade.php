@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>@yield('title', config('app.name'))</title>
+        <title>{{ page_title($title ?? null) }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -17,14 +17,6 @@
             @yield('content')
         </main>
 
-        <footer class="text-gray-400">
-            <p>
-                &copy; Copyright {{ date('Y') }} 
-
-                @if(!Route::is('about'))
-                    &middot; <a href="{{ route('about') }}" class="text-indigo-500 hover:text-indigo-600 underline">About Us</a>
-                @endif
-            </p>
-        </footer>
+        @include('layouts.partials.footer')
     </body>
 </html>

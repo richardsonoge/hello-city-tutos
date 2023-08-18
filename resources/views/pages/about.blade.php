@@ -1,6 +1,4 @@
-@extends('app')
-
-@section('title', 'About Us | '.config('app.name'))
+@extends('layouts.app', ['title' => config('app.name').' - About Us'])
 
 @section('content')
     <img src="images/Beautiful-sky-photography-lisa-fotios.jpeg" width="200px" alt="Beautiful-sky-photography-lisa-fotios" class="my-12 rounded-full shadow-md">
